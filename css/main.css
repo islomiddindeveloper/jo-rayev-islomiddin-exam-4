@@ -1,0 +1,101 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-color: #e5e5e5;
+  border-bottom: 2px solid rgb(110, 106, 106);
+  z-index: 10000;
+}
+
+body {
+  overflow-x: hidden;
+}
+.btn-backtop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: solid 3px #2d76f9;
+  border-radius: 20px;
+  z-index: 2000000000;
+  color: #2d76f9;
+  background-color: #2d76f9;
+}
+.bck {
+  color: #2d76f9;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.containers {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 150px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #e5e5e5;
+  padding: 20px 0;
+}
+.bb {
+  background-color: #a6b0c3;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.card-text {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.search-box {
+  width: 670px;
+  position: relative;
+}
+
+.search-box img {
+  left: 15px;
+  top: 15px;
+  position: absolute;
+}
+
+input {
+  width: 100%;
+  padding: 13px 16px 13px 50px;
+  border: 1 ps solid black !important;
+  background: #f8fafd;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.modal-box {
+  position: absolute;
+  height: 100vh;
+  background-color: blue;
+  width: 50vw;
+  transform: translateX(40px);
+  display: none;
+}
+
+.active {
+  display: block;
+}

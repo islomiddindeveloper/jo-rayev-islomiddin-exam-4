@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Home page</title>
+</head>
+
+<body>
+  <header>
+    <div class="containers">
+      <div class="head d-flex justify-content-between align-items-center py-3">
+        <a href="index.html">
+          <img src="./imgs/homeLogo.png" alt="" />
+        </a>
+
+        <div class="search-box ">
+          <input id="search-input" placeholder="Search books" class="border-0" type="text" />
+          <img src="./imgs/serch.svg" alt="">
+        </div>
+
+        <div>
+          <button><i class="uil uil-moon"></i></button>
+          <button class="switch ">
+            <img src="./imgs/sun.svg" alt="" />
+          </button>
+
+          <button class="btn btn-primary" id="logout">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section">
+      <div class="containers">
+        <div class="d-flex justify-content-between border-2 mb-5 bg-white px-5">
+          <b class="pt-3">Showing 18 Result(s)</b>
+          <div class="d-flex gap-3  bb  px-2 ">
+            <img src="./imgs/calendar 1.svg" alt="">
+            <p class="pt-3 ">Order by newest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="btn-backtop">
+        <a href="#">
+          <img class="bck" src="./imgs/backtop.svg" alt="">
+        </a>
+      </div>
+      <div class="wrapper">
+        <div class="bookmarks col-3 p-0  ">
+          <div class="bookmarks">
+            <h2>Bookmarks</h2>
+            <p>
+              If you don’t like to read, you <br />
+              haven’t found the right book
+            </p>
+
+            <div>
+              <div class="d-flex justify-content-between w-75 mb-2 align-items-center rounded-3 bg-light p-4">
+                <div>
+                  <h3>Python</h3>
+                  <span>David M. Beazley</span>
+                </div>
+
+                <div>
+                  <img src="./imgs/book-open .svg" alt="" />
+                  <img src="./imgs/delete .svg" alt="" />
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between w-75 mb-2 align-items-center rounded-3 bg-light p-4">
+                <div>
+                  <h3>Python</h3>
+                  <span>David M. Beazley</span>
+                </div>
+
+                <div>
+                  <img src="./imgs/book-open .svg" alt="" />
+                  <img src="./imgs/delete .svg" alt="" />
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between w-75 mb-2 align-items-center rounded-3 bg-light p-4">
+                <div>
+                  <h3>C++</h3>
+                  <span>David M. Beazley</span>
+                </div>
+
+                <div>
+                  <img src="./imgs/book-open .svg" alt="" />
+                  <img src="./imgs/delete .svg" alt="" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9  ovoverflow-y-scroll">
+          <ul id="data" class="box card__list row"></ul>
+        </div>
+
+        <!-- moodal -->
+
+        <div class="modal right fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-side modal-top-right ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script src="./js/utlity.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+  background-image: url("../imgs/Login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  border: none;
+  height: 320px;
+}
+
+.forms-inputs {
+  position: relative;
+}
+
+.login-input{
+  padding: 13px 12px;
+  border-radius: 5px;
+  border: 1px solid black !important;
+}
+
+.btn {
+  height: 50px;
+}
+
+.success-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.bxs-badge-check {
+  font-size: 90px;
+}
